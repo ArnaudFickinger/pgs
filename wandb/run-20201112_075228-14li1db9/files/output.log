@@ -1,0 +1,104 @@
+[32;1mLogging data to /tmp/experiments/1605196349/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpd3qadzblwandb-media/1e18shv7.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  49%|████▉     | 59/120 [00:00<00:00, 585.57it/s, now=None]t:  98%|█████████▊| 117/120 [00:00<00:00, 581.07it/s, now=None]                                                               [32;1mLogging data to /tmp/experiments/1605196353/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605196353 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605196353/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 2 due to reaching max kl.
+1
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 12 due to reaching max kl.
+2
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+3
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+4
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+6
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+8
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+9
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+10
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+11
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+12
+13
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+14
+Early stopping at step 3 due to reaching max kl.
+15
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+16
+17
+Early stopping at step 10 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+18
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+19
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+20
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+21
+Early stopping at step 8 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+22
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+23
+24
+Early stopping at step 12 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+25
+Traceback (most recent call last):
+  File "online_finetuning.py", line 212, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 190, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 145, in select_action
+    torch.as_tensor(obs, dtype=torch.float32).to(device).unsqueeze(0).permute(0, 3, 1, 2))
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 173, in step
+    v = self.v(obs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 150, in forward
+    obs = self.convnet(obs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/container.py", line 100, in forward
+    input = module(input)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 550, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 23, in forward
+    return x.reshape(x.size(0), -1)
+KeyboardInterrupt

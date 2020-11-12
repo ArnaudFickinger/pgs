@@ -1,0 +1,91 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.10
+clip_grad:
+  desc: null
+  value: -1
+clip_ratio:
+  desc: null
+  value: 0.2
+clip_reward:
+  desc: null
+  value: -1
+env:
+  desc: null
+  value: Sokoban-v0
+epoch_blueprint:
+  desc: null
+  value: 1500
+fixed_env:
+  desc: null
+  value: 1
+gamma:
+  desc: null
+  value: 0.99
+hidden_dim:
+  desc: null
+  value: -1
+index_level:
+  desc: null
+  value: 1
+lam:
+  desc: null
+  value: 0.97
+min_horizon_online_search:
+  desc: null
+  value: 5
+nb_gradient_finetune:
+  desc: null
+  value: 16
+nb_hidden:
+  desc: null
+  value: -1
+nb_test_episodes:
+  desc: null
+  value: 2
+normalize_reward:
+  desc: null
+  value: -1
+num_boxes:
+  desc: null
+  value: 4
+pi_lr:
+  desc: null
+  value: 0.0003
+randomized_init_position:
+  desc: null
+  value: 1
+recurrent_seq_length_policy:
+  desc: null
+  value: -1
+render_mode:
+  desc: null
+  value: rgb_array
+seed:
+  desc: null
+  value: 0
+steps_finetune:
+  desc: null
+  value: 64
+target_kl:
+  desc: null
+  value: 0.01
+test_ep_length:
+  desc: null
+  value: 120
+train_pi_iters:
+  desc: null
+  value: 80
+train_v_iters:
+  desc: null
+  value: 80
+vf_lr:
+  desc: null
+  value: 0.001

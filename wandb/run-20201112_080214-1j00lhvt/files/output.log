@@ -1,0 +1,54 @@
+[32;1mLogging data to /tmp/experiments/1605196935/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpozfyumjjwandb-media/tpi3mtjo.gif with imageio.
+t:   0%|          | 0/240 [00:00<?, ?it/s, now=None]t:  27%|██▋       | 65/240 [00:00<00:00, 640.41it/s, now=None]t:  54%|█████▍    | 129/240 [00:00<00:00, 638.40it/s, now=None]t:  80%|████████  | 192/240 [00:00<00:00, 632.97it/s, now=None]                                                               [32;1mLogging data to /tmp/experiments/1605196938/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605196939/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 2 due to reaching max kl.
+1
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 12 due to reaching max kl.
+2
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+3
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+4
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+5
+Traceback (most recent call last):
+  File "online_finetuning.py", line 209, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 187, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 145, in select_action
+    next_obs, reward, done, _ = planning_env.step(action.item())
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 119, in step
+    observation = self.render(mode=observation_mode)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 304, in render
+    img = self.get_image(mode, scale)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 332, in get_image
+    img = room_to_rgb(self.room_state, self.room_fixed)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/render_utils.py", line 25, in room_to_rgb
+    '/'.join(('surface', 'box_on_target.png')))
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/pkg_resources/__init__.py", line 1145, in resource_filename
+    return get_provider(package_or_requirement).get_resource_filename(
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/pkg_resources/__init__.py", line 365, in get_provider
+    return _find_adapter(_provider_factories, loader)(module)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/pkg_resources/__init__.py", line 1585, in __init__
+    self._setup_prefix()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/pkg_resources/__init__.py", line 1593, in _setup_prefix
+    if _is_egg_path(path):
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/pkg_resources/__init__.py", line 2364, in _is_egg_path
+    return path.lower().endswith('.egg')
+KeyboardInterrupt

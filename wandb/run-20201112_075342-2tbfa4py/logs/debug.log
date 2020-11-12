@@ -1,0 +1,60 @@
+2020-11-12 07:53:42,328 INFO    MainThread:32340 [wandb_init.py:_log_setup():293] Logging user logs to wandb/run-20201112_075342-2tbfa4py/logs/debug.log
+2020-11-12 07:53:42,328 INFO    MainThread:32340 [wandb_init.py:_log_setup():294] Logging internal logs to wandb/run-20201112_075342-2tbfa4py/logs/debug-internal.log
+2020-11-12 07:53:42,328 INFO    MainThread:32340 [wandb_setup.py:_flush():69] setting env: {}
+2020-11-12 07:53:42,328 INFO    MainThread:32340 [wandb_setup.py:_flush():69] setting user settings: {'email': 'arnaud.fickinger@berkeley.edu'}
+2020-11-12 07:53:42,328 INFO    MainThread:32340 [wandb_setup.py:_flush():69] multiprocessing start_methods=fork,spawn,forkserver
+2020-11-12 07:53:43,046 INFO    MainThread:32340 [wandb_run.py:_console_start():1290] atexit reg
+2020-11-12 07:53:43,046 INFO    MainThread:32340 [wandb_run.py:_redirect():1160] redirect: SettingsConsole.REDIRECT
+2020-11-12 07:53:43,047 INFO    MainThread:32340 [wandb_run.py:_redirect():1163] Redirecting console.
+2020-11-12 07:53:43,047 INFO    MainThread:32340 [redirect.py:install():196] install start
+2020-11-12 07:53:43,047 INFO    MainThread:32340 [redirect.py:install():211] install stop
+2020-11-12 07:53:43,047 INFO    MainThread:32340 [redirect.py:install():196] install start
+2020-11-12 07:53:43,048 INFO    MainThread:32340 [redirect.py:install():211] install stop
+2020-11-12 07:53:43,048 INFO    MainThread:32340 [wandb_run.py:_redirect():1207] Redirects installed.
+2020-11-12 07:53:43,048 INFO    MainThread:32340 [wandb_run.py:_config_callback():591] config_cb None None {'_wandb': {'cli_version': '0.10.8', 'python_version': '3.6.10', 'is_jupyter_run': False, 'is_kaggle_kernel': False, 'framework': 'torch'}, 'env': 'Sokoban-v0', 'seed': 0, 'gamma': 0.99, 'hidden_dim': -1, 'nb_hidden': -1, 'lam': 0.97, 'clip_ratio': 0.2, 'pi_lr': 0.0003, 'vf_lr': 0.001, 'target_kl': 0.01, 'train_pi_iters': 80, 'train_v_iters': 80, 'normalize_reward': -1, 'clip_reward': -1, 'clip_grad': -1, 'recurrent_seq_length_policy': -1, 'render_mode': 'rgb_array', 'num_boxes': 4, 'fixed_env': 1, 'randomized_init_position': 1, 'epoch_blueprint': 1500, 'index_level': 1, 'nb_test_episodes': 1, 'test_ep_length': 120, 'steps_finetune': 64, 'nb_gradient_finetune': 16, 'min_horizon_online_search': 5}
+2020-11-12 07:57:23,279 ERROR   stdout    :32340 [redirect.py:_pipe_relay():129] problem in pipe relay
+Traceback (most recent call last):
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/lib/redirect.py", line 127, in _pipe_relay
+    cb(name, data)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 644, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 146, in publish_output
+    self._publish_output(o)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 151, in _publish_output
+    self._publish(rec)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 429, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2020-11-12 07:57:28,550 ERROR   stderr    :32340 [redirect.py:_pipe_relay():129] problem in pipe relay
+Traceback (most recent call last):
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/lib/redirect.py", line 127, in _pipe_relay
+    cb(name, data)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/sdk/wandb_run.py", line 644, in _console_callback
+    self._backend.interface.publish_output(name, data)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 146, in publish_output
+    self._publish_output(o)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 151, in _publish_output
+    self._publish(rec)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/wandb/interface/interface.py", line 429, in _publish
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+2020-11-12 07:57:28,551 INFO    MainThread:32340 [wandb_run.py:_atexit_cleanup():1263] got exitcode: 1
+2020-11-12 07:57:28,551 INFO    MainThread:32340 [wandb_run.py:_restore():1235] restore
+2020-11-12 07:57:28,551 INFO    MainThread:32340 [redirect.py:uninstall():215] uninstall start
+2020-11-12 07:57:28,551 INFO    MainThread:32340 [redirect.py:_stop():264] _stop: stdout
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:_stop():270] _stop closed: stdout
+2020-11-12 07:57:28,552 INFO    stdout    :32340 [redirect.py:_pipe_relay():119] relay done saw last write: stdout
+2020-11-12 07:57:28,552 INFO    stdout    :32340 [redirect.py:_pipe_relay():135] relay done done: stdout
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:_stop():276] _stop joined: stdout
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:_stop():278] _stop rd closed: stdout
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:uninstall():219] uninstall done
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:uninstall():215] uninstall start
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:_stop():264] _stop: stderr
+2020-11-12 07:57:28,552 INFO    MainThread:32340 [redirect.py:_stop():270] _stop closed: stderr
+2020-11-12 07:57:28,552 INFO    stderr    :32340 [redirect.py:_pipe_relay():119] relay done saw last write: stderr
+2020-11-12 07:57:28,552 INFO    stderr    :32340 [redirect.py:_pipe_relay():135] relay done done: stderr
+2020-11-12 07:57:28,553 INFO    MainThread:32340 [redirect.py:_stop():276] _stop joined: stderr
+2020-11-12 07:57:28,553 INFO    MainThread:32340 [redirect.py:_stop():278] _stop rd closed: stderr
+2020-11-12 07:57:28,553 INFO    MainThread:32340 [redirect.py:uninstall():219] uninstall done
+2020-11-12 07:57:28,553 INFO    MainThread:32340 [wandb_run.py:_restore():1235] restore
+2020-11-12 07:57:32,620 INFO    MainThread:32340 [internal.py:handle_exit():137] Internal process exited

@@ -1,0 +1,73 @@
+[32;1mLogging data to /tmp/experiments/1605196677/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmp539ipq8dwandb-media/3upuko9a.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  52%|█████▏    | 62/120 [00:00<00:00, 615.06it/s, now=None]                                                              [32;1mLogging data to /tmp/experiments/1605196680/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605196680 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605196680/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 2 due to reaching max kl.
+1
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 12 due to reaching max kl.
+2
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+3
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+4
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+6
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+8
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+9
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+10
+Early stopping at step 4 due to reaching max kl.
+11
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+12
+13
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+14
+Early stopping at step 1 due to reaching max kl.
+15
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+16
+17
+Traceback (most recent call last):
+  File "online_finetuning.py", line 213, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 191, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 170, in select_action
+    simulation_trainer.update()
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 248, in update
+    loss_pi.backward()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt

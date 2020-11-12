@@ -1,0 +1,67 @@
+[32;1mLogging data to /tmp/experiments/1605198586/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpz4iu2e2_wandb-media/3a3iqgyl.gif with imageio.
+t:   0%|          | 0/240 [00:00<?, ?it/s, now=None]t:  27%|██▋       | 65/240 [00:00<00:00, 646.43it/s, now=None]t:  54%|█████▍    | 129/240 [00:00<00:00, 642.67it/s, now=None]t:  80%|████████  | 193/240 [00:00<00:00, 640.55it/s, now=None]                                                               [32;1mLogging data to /tmp/experiments/1605198590/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605198590 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605198590/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+8
+11
+30
+Early stopping at step 2 due to reaching max kl.
+41
+Early stopping at step 5 due to reaching max kl.
+52
+Early stopping at step 1 due to reaching max kl.
+63
+Early stopping at step 3 due to reaching max kl.
+74
+Early stopping at step 32 due to reaching max kl.
+85
+Early stopping at step 1 due to reaching max kl.
+96
+Early stopping at step 1 due to reaching max kl.
+107
+Early stopping at step 7 due to reaching max kl.
+8
+11
+30
+Early stopping at step 3 due to reaching max kl.
+41
+Early stopping at step 3 due to reaching max kl.
+52
+Early stopping at step 4 due to reaching max kl.
+63
+Early stopping at step 2 due to reaching max kl.
+74
+85
+Early stopping at step 2 due to reaching max kl.
+96
+Early stopping at step 3 due to reaching max kl.
+107
+Early stopping at step 48 due to reaching max kl.
+8
+11
+30
+Early stopping at step 6 due to reaching max kl.
+41
+Early stopping at step 47 due to reaching max kl.
+52
+Early stopping at step 7 due to reaching max kl.
+Traceback (most recent call last):
+  File "online_finetuning.py", line 224, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 202, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 181, in select_action
+    simulation_trainer.update()
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 281, in update
+    DeltaLossPi=(loss_pi.item() - pi_l_old),
+KeyboardInterrupt

@@ -1,0 +1,95 @@
+[32;1mLogging data to /tmp/experiments/1605198700/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmp5n2e99jzwandb-media/3h6iv3p3.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  52%|█████▏    | 62/120 [00:00<00:00, 611.36it/s, now=None]                                                              [32;1mLogging data to /tmp/experiments/1605198703/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605198703 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605198703/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+30
+30
+30
+30
+30
+30
+30
+30
+25
+Early stopping at step 2 due to reaching max kl.
+41
+41
+41
+41
+41
+41
+17
+Early stopping at step 4 due to reaching max kl.
+52
+52
+52
+52
+52
+2
+Early stopping at step 3 due to reaching max kl.
+63
+63
+63
+63
+9
+Early stopping at step 3 due to reaching max kl.
+74
+74
+74
+38
+Early stopping at step 4 due to reaching max kl.
+85
+85
+85
+5
+Early stopping at step 4 due to reaching max kl.
+96
+96
+67
+Early stopping at step 2 due to reaching max kl.
+107
+107
+45
+Early stopping at step 1 due to reaching max kl.
+30
+30
+30
+30
+30
+30
+30
+30
+25
+Early stopping at step 10 due to reaching max kl.
+41
+41
+41
+41
+41
+41
+17
+Early stopping at step 2 due to reaching max kl.
+Traceback (most recent call last):
+  File "online_finetuning.py", line 224, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 202, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 181, in select_action
+    simulation_trainer.update()
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 274, in update
+    self.vf_optimizer.step()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 15, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/optim/adam.py", line 107, in step
+    denom = (exp_avg_sq.sqrt() / math.sqrt(bias_correction2)).add_(group['eps'])
+KeyboardInterrupt

@@ -1,0 +1,16 @@
+[32;1mLogging data to /tmp/experiments/1605199344/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpd58nlfm7wandb-media/fr58voxp.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  55%|█████▌    | 66/120 [00:00<00:00, 658.35it/s, now=None]                                                              > /home/arnaud/Desktop/research/code/policy_gradient_search/online_finetuning.py(106)finetune()
+-> test_env = gym.make(env_id, **params_env)
+(Pdb) *** NameError: name 'env_is' is not defined
+(Pdb) 2048
+(Pdb) 'Sokoban-v0'
+(Pdb) Traceback (most recent call last):
+  File "online_finetuning.py", line 230, in <module>
+    for nb_online_sample in nb_online_samples:
+  File "online_finetuning.py", line 106, in finetune
+    break
+TypeError: make() argument after ** must be a mapping, not str

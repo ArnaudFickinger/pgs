@@ -1,0 +1,186 @@
+[32;1mLogging data to /tmp/experiments/1605196746/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpsqa70cc8wandb-media/19hhpcdt.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  53%|█████▎    | 64/120 [00:00<00:00, 631.34it/s, now=None]                                                              [32;1mLogging data to /tmp/experiments/1605196748/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605196748 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605196748/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 2 due to reaching max kl.
+1
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 12 due to reaching max kl.
+2
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+3
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+4
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+6
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+8
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 7 due to reaching max kl.
+9
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+10
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+11
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+12
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+13
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+14
+Early stopping at step 1 due to reaching max kl.
+15
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+16
+Early stopping at step 2 due to reaching max kl.
+17
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+18
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+19
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+20
+21
+22
+Early stopping at step 1 due to reaching max kl.
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+Traceback (most recent call last):
+  File "online_finetuning.py", line 214, in <module>
+  File "online_finetuning.py", line 192, in finetune
+    cumulative_rewards.append(episode_reward)
+  File "online_finetuning.py", line 150, in select_action
+    if done:
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 119, in step
+    observation = self.render(mode=observation_mode)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 304, in render
+    img = self.get_image(mode, scale)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 332, in get_image
+    img = room_to_rgb(self.room_state, self.room_fixed)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/render_utils.py", line 39, in room_to_rgb
+    player_on_target = imageio.imread(player_on_target_filename)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/functions.py", line 178, in get_reader
+    format = formats.search_read_format(request)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/format.py", line 689, in search_read_format
+    if format.can_read(request):
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/format.py", line 192, in can_read
+    return self._can_read(request)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/plugins/pillow.py", line 107, in _can_read
+    if request.firstbytes and accept(request.firstbytes):
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/request.py", line 442, in firstbytes
+    self._read_first_bytes()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/request.py", line 451, in _read_first_bytes
+    f = self.get_file()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/request.py", line 333, in get_file
+    self._file = open(self.filename, "rb")
+KeyboardInterrupt

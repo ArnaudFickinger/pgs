@@ -1,0 +1,11 @@
+[32;1mLogging data to /tmp/experiments/1605199275/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmphc0ukuu8wandb-media/3vv0dhk9.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  54%|█████▍    | 65/120 [00:00<00:00, 649.38it/s, now=None]                                                              Traceback (most recent call last):
+  File "online_finetuning.py", line 229, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 105, in finetune
+    test_env = gym.make(env_id, **params_env)
+TypeError: make() argument after ** must be a mapping, not str

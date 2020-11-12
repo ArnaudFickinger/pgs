@@ -1,0 +1,203 @@
+[32;1mLogging data to /tmp/experiments/1605196097/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpthe4jhhpwandb-media/1zb2rrer.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  54%|█████▍    | 65/120 [00:00<00:00, 647.30it/s, now=None]                                                              [32;1mLogging data to /tmp/experiments/1605196100/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605196100 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605196100/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+1
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 7 due to reaching max kl.
+2
+Early stopping at step 13 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+3
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+4
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+6
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+8
+Early stopping at step 5 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+9
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+10
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+11
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+12
+Early stopping at step 7 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+13
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+14
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+15
+Early stopping at step 8 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+16
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+17
+Early stopping at step 2 due to reaching max kl.
+18
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+19
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 13 due to reaching max kl.
+20
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+21
+Early stopping at step 10 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+22
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+23
+Early stopping at step 1 due to reaching max kl.
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+Early stopping at step 4 due to reaching max kl.
+62
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+63
+Early stopping at step 14 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+64
+Early stopping at step 1 due to reaching max kl.
+65
+66
+Early stopping at step 7 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+67
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+68
+69
+Early stopping at step 6 due to reaching max kl.
+70
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+71
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+72
+Early stopping at step 11 due to reaching max kl.
+73
+Early stopping at step 2 due to reaching max kl.
+74
+75
+Early stopping at step 4 due to reaching max kl.
+76
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+77
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+78
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+Early stopping at step 9 due to reaching max kl.
+89
+Traceback (most recent call last):
+  File "online_finetuning.py", line 211, in <module>
+    for nb_online_sample in nb_online_samples:
+  File "online_finetuning.py", line 189, in finetune
+    ep_len+=1
+  File "online_finetuning.py", line 130, in select_action
+    rollout_reward = 0
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 119, in step
+    observation = self.render(mode=observation_mode)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 304, in render
+    img = self.get_image(mode, scale)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 332, in get_image
+    img = room_to_rgb(self.room_state, self.room_fixed)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/render_utils.py", line 29, in room_to_rgb
+    box_target = imageio.imread(box_target_filename)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/functions.py", line 265, in imread
+    reader = read(uri, format, "i", **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/functions.py", line 172, in get_reader
+    request = Request(uri, "r" + mode, **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/request.py", line 124, in __init__
+    self._parse_uri(uri)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/request.py", line 250, in _parse_uri
+    self._filename = os.path.abspath(self._filename)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/posixpath.py", line 385, in abspath
+    return normpath(path)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/posixpath.py", line 364, in normpath
+    if (comp != dotdot or (not initial_slashes and not new_comps) or
+KeyboardInterrupt

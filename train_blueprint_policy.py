@@ -157,9 +157,9 @@ for epoch in range(args.epochs):
                 ppo_trainer.logger.store(EpExternalRet=ep_ext_ret, EpLen=ep_len)
             o, ep_ext_ret, ep_len = env.reset(render_mode=args.render_mode), 0, 0
 
-    if args.test_frequency>0 and epoch % args.test_frequency == 0:
-        for tester in testers:
-            tester.test(args.nb_test_episodes, args.max_ep_len)
+    # if args.test_frequency>0 and epoch % args.test_frequency == 0:
+    #     for tester in testers:
+    #         tester.test(args.nb_test_episodes, args.max_ep_len)
 
     ppo_trainer.update()
     keys = ['EpExternalRet', 'VVals', 'LossPi', 'LossV', 'Entropy', 'KL', 'StopIter']

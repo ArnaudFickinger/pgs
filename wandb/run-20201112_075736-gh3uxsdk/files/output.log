@@ -1,0 +1,10 @@
+[32;1mLogging data to /tmp/experiments/1605196657/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Traceback (most recent call last):
+  File "online_finetuning.py", line 209, in <module>
+    vanilla(params_finetune_trainer, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 97, in vanilla
+    obs, reward, done, _ = test_env.step(action.item())
+AttributeError: 'int' object has no attribute 'item'

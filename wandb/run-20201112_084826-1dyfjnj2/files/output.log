@@ -1,0 +1,19 @@
+[32;1mLogging data to /tmp/experiments/1605199707/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmp32cm43y7wandb-media/8r3r53ch.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  52%|█████▏    | 62/120 [00:00<00:00, 618.58it/s, now=None]                                                              > /home/arnaud/Desktop/research/code/policy_gradient_search/online_finetuning.py(112)finetune()
+-> test_env = gym.make(env_id, **params_env)
+(Pdb) Traceback (most recent call last):
+  File "online_finetuning.py", line 231, in <module>
+    finetune(nb_online_sample)
+  File "online_finetuning.py", line 112, in finetune
+    test_env = gym.make(env_id, **params_env)
+  File "online_finetuning.py", line 112, in finetune
+    test_env = gym.make(env_id, **params_env)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

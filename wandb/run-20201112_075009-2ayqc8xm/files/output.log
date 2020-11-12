@@ -1,0 +1,183 @@
+[32;1mLogging data to /tmp/experiments/1605196210/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpbe638t63wandb-media/2kl733nw.gif with imageio.t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]
+t:  32%|███▎      | 39/120 [00:00<00:00, 385.66it/s, now=None]t:  72%|███████▏  | 86/120 [00:00<00:00, 406.33it/s, now=None]                                                              [32;1mLogging data to /tmp/experiments/1605196214/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605196214 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605196214/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+1
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 7 due to reaching max kl.
+2
+Early stopping at step 13 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+3
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+4
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+6
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+8
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+9
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+10
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+11
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+12
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+13
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+14
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+15
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+16
+Early stopping at step 10 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+17
+Early stopping at step 1 due to reaching max kl.
+18
+Early stopping at step 6 due to reaching max kl.
+19
+20
+Early stopping at step 3 due to reaching max kl.
+21
+Early stopping at step 3 due to reaching max kl.
+22
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+23
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+24
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 7 due to reaching max kl.
+25
+Early stopping at step 5 due to reaching max kl.
+26
+27
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 14 due to reaching max kl.
+28
+29
+30
+Early stopping at step 2 due to reaching max kl.
+31
+Early stopping at step 10 due to reaching max kl.
+32
+Early stopping at step 3 due to reaching max kl.
+33
+Early stopping at step 12 due to reaching max kl.
+Early stopping at step 9 due to reaching max kl.
+34
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+35
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+36
+Early stopping at step 11 due to reaching max kl.
+37
+Early stopping at step 2 due to reaching max kl.
+38
+Early stopping at step 5 due to reaching max kl.
+39
+Early stopping at step 9 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+40
+Early stopping at step 7 due to reaching max kl.
+41
+Early stopping at step 2 due to reaching max kl.
+42
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+43
+Early stopping at step 8 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+44
+45
+Early stopping at step 9 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+46
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+47
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+48
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 11 due to reaching max kl.
+49
+Early stopping at step 9 due to reaching max kl.
+50
+Early stopping at step 13 due to reaching max kl.
+Early stopping at step 10 due to reaching max kl.
+51
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 7 due to reaching max kl.
+52
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+53
+Early stopping at step 9 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+54
+Early stopping at step 7 due to reaching max kl.
+55
+Early stopping at step 10 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+56
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+57
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+58
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+59
+Early stopping at step 7 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+60
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+61
+Traceback (most recent call last):
+  File "online_finetuning.py", line 212, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 190, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 145, in select_action
+    torch.as_tensor(obs, dtype=torch.float32).to(device).unsqueeze(0).permute(0, 3, 1, 2))
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 174, in step
+    return a.cpu().numpy(), v.cpu().numpy(), logp_a.cpu().numpy()
+KeyboardInterrupt

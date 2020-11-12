@@ -1,0 +1,82 @@
+[32;1mLogging data to /tmp/experiments/1605196880/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmpbfgwiivtwandb-media/20wvwbny.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  45%|████▌     | 54/120 [00:00<00:00, 539.27it/s, now=None]t:  74%|███████▍  | 89/120 [00:00<00:00, 458.86it/s, now=None]t:  95%|█████████▌| 114/120 [00:00<00:00, 360.74it/s, now=None]                                                               [32;1mLogging data to /tmp/experiments/1605196883/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605196884/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 2 due to reaching max kl.
+1
+Early stopping at step 11 due to reaching max kl.
+Early stopping at step 12 due to reaching max kl.
+2
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+3
+Early stopping at step 6 due to reaching max kl.
+Early stopping at step 6 due to reaching max kl.
+4
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+5
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+6
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+7
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+8
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+9
+Early stopping at step 10 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+10
+Early stopping at step 3 due to reaching max kl.
+11
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+12
+13
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+14
+Early stopping at step 1 due to reaching max kl.
+15
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+16
+Early stopping at step 5 due to reaching max kl.
+Early stopping at step 1 due to reaching max kl.
+17
+Traceback (most recent call last):
+  File "online_finetuning.py", line 209, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 187, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 145, in select_action
+    next_obs, reward, done, _ = planning_env.step(action.item())
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 119, in step
+    observation = self.render(mode=observation_mode)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 304, in render
+    img = self.get_image(mode, scale)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/sokoban_env.py", line 332, in get_image
+    img = room_to_rgb(self.room_state, self.room_fixed)
+  File "/home/arnaud/Desktop/research/code/deep_search/gym-sokoban/gym_sokoban/envs/render_utils.py", line 39, in room_to_rgb
+    player_on_target = imageio.imread(player_on_target_filename)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/functions.py", line 267, in imread
+    return reader.get_data(0)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/format.py", line 349, in get_data
+    return Array(im, meta)  # Array tests im and meta
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/imageio/core/util.py", line 122, in __new__
+    if not isinstance(array, np.ndarray):
+KeyboardInterrupt

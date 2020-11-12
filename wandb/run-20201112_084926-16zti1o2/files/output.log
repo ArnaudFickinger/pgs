@@ -1,0 +1,39 @@
+[32;1mLogging data to /tmp/experiments/1605199766/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+MoviePy - Building file /tmp/tmphgh1mrb1wandb-media/bdi8gfbl.gif with imageio.
+t:   0%|          | 0/120 [00:00<?, ?it/s, now=None]t:  49%|████▉     | 59/120 [00:00<00:00, 583.34it/s, now=None]t:  98%|█████████▊| 118/120 [00:00<00:00, 583.96it/s, now=None]                                                               [32;1mLogging data to /tmp/experiments/1605199769/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605199769 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605199769/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 3 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 4 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 20 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+Early stopping at step 2 due to reaching max kl.
+Traceback (most recent call last):
+  File "online_finetuning.py", line 231, in <module>
+    finetune(nb_online_sample)
+  File "online_finetuning.py", line 213, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 190, in select_action
+    simulation_trainer.update()
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 266, in update
+    loss_v.backward()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/tensor.py", line 198, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/autograd/__init__.py", line 100, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
