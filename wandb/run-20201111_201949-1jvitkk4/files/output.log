@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "online_finetuning.py", line 196, in <module>
+    "seed":args.seed, "steps_per_epoch":args.steps_finetune, "epochs":args.epochs,
+AttributeError: 'Namespace' object has no attribute 'epochs'

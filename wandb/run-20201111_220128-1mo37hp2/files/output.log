@@ -1,0 +1,22 @@
+[32;1mLogging data to /tmp/experiments/1605160889/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605160893/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605160893 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605160893/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Traceback (most recent call last):
+  File "online_finetuning.py", line 204, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 182, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 135, in select_action
+    action_seq_seen_so_far.add(tuple(action_seq))
+TypeError: unhashable type: 'numpy.ndarray'

@@ -1,0 +1,46 @@
+[32;1mLogging data to /tmp/experiments/1605161503/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605161507/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605161507 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605161507/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+> /home/arnaud/Desktop/research/code/policy_gradient_search/online_finetuning.py(170)select_action()
+-> return max(range(planning_env.action_space.n), key=puct), sample
+(Pdb) *** IndexError: index 1 is out of bounds for dimension 0 with size 1
+(Pdb) *** IndexError: index 1 is out of bounds for dimension 0 with size 1
+(Pdb) 160
+(Pdb) 128
+(Pdb) {0: -5.2422214, 1: -5.2923813, 2: -5.2760124, 3: -5.2710752, 4: -5.28552, 5: -5.294048, 6: -5.268597, 7: -5.2573013, 8: -5.2466936}
+(Pdb) *** IndexError: index 1 is out of bounds for dimension 0 with size 1
+(Pdb) -5.2466936
+(Pdb) tensor([[0.1297, 0.1018, 0.0843, 0.1852, 0.0640, 0.1421, 0.1167, 0.1155, 0.0605]],
+       device='cuda:0')
+(Pdb) array([4., 4., 4., 4., 4., 4., 4., 2., 2.])
+(Pdb) *** IndexError: index 1 is out of bounds for dimension 0 with size 1
+(Pdb) *** ValueError: only one element tensors can be converted to Python scalars
+(Pdb) array([0.12973697, 0.10184567, 0.08430922, 0.18524827, 0.06396947,
+       0.14215   , 0.11672688, 0.11553211, 0.06048139], dtype=float32)
+(Pdb) Traceback (most recent call last):
+  File "online_finetuning.py", line 207, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 185, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 170, in select_action
+    return max(np.arange(planning_env.action_space.n), key=puct), sample
+  File "online_finetuning.py", line 170, in select_action
+    return max(np.arange(planning_env.action_space.n), key=puct), sample
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

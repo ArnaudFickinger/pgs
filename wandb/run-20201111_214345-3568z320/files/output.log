@@ -1,0 +1,28 @@
+[32;1mLogging data to /tmp/experiments/1605159826/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Traceback (most recent call last):
+  File "online_finetuning.py", line 201, in <module>
+    vanilla(params_finetune_trainer, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 83, in vanilla
+    global_trainer.load_state_dict(path_ac, path_piot, path_vopt)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 202, in load_state_dict
+    self.ac.load_state_dict(torch.load(path_ac))
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 592, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 852, in _load
+    result = unpickler.load()
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 844, in persistent_load
+    load_tensor(data_type(size), size, key, _maybe_decode_ascii(location))
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 827, in load_tensor
+    loaded_storages[key] = restore_location(obj, location)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 178, in default_restore_location
+    result = fn(storage, location)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/serialization.py", line 160, in _cuda_deserialize
+    return obj.cuda(device)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/_utils.py", line 77, in _cuda
+    return new_type(self.size()).copy_(self, non_blocking)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/cuda/__init__.py", line 433, in _lazy_new
+    return super(_CudaBase, cls).__new__(cls, *args, **kwargs)
+RuntimeError: CUDA error: out of memory

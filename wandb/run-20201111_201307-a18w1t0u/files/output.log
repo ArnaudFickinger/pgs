@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "online_finetuning.py", line 70, in <module>
+    env = gym.make(env_id, num_boxes= args.num_boxes, max_steps=args.max_ep_len, seed=args.seed, fixed_env=fixed_env, randomized_init_position=randomized_init_position)
+AttributeError: 'Namespace' object has no attribute 'max_ep_len'

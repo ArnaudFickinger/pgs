@@ -1,0 +1,21 @@
+[32;1mLogging data to /tmp/experiments/1605155028/progress.txt[0m
+Traceback (most recent call last):
+  File "online_finetuning.py", line 203, in <module>
+    vanilla(params_finetune_trainer, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 81, in vanilla
+    global_trainer = PPO(**params_finetune_trainer)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/ppo.py", line 137, in __init__
+    self.ac = actor_critic(self.env.observation_space, self.env.action_space, ac_kwargs).to(device)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 161, in __init__
+    self.pi = CNNCategoricalActor(obs_dim, action_space.n, ac_kwargs).to(device)
+  File "/home/arnaud/Desktop/research/code/policy_gradient_search/ppo_spinningup/model.py", line 52, in __init__
+    nn.ReLU()).to(device)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 443, in to
+    return self._apply(convert)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 203, in _apply
+    module._apply(fn)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 225, in _apply
+    param_applied = fn(param)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/torch/nn/modules/module.py", line 441, in convert
+    return t.to(device, dtype if t.is_floating_point() else None, non_blocking)
+RuntimeError: CUDA error: out of memory

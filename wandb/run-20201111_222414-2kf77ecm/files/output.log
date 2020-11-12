@@ -1,0 +1,34 @@
+[32;1mLogging data to /tmp/experiments/1605162255/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605162260/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605162260 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605162260/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+> /home/arnaud/Desktop/research/code/policy_gradient_search/online_finetuning.py(170)select_action()
+-> return max(np.arange(planning_env.action_space.n), key=puct), sample
+(Pdb) 7
+(Pdb) {0: -5.241856, 1: -5.292107, 2: -5.2757382, 3: -5.27077, 4: -5.285237, 5: -5.2937803, 6: -5.2683396, 7: -5.2570963, 8: -5.2464256}
+(Pdb) Traceback (most recent call last):
+  File "online_finetuning.py", line 207, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 185, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 170, in select_action
+    return max(np.arange(planning_env.action_space.n), key=puct), sample
+  File "online_finetuning.py", line 170, in select_action
+    return max(np.arange(planning_env.action_space.n), key=puct), sample
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

@@ -1,0 +1,31 @@
+[32;1mLogging data to /tmp/experiments/1605161345/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605161349/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605161349 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605161349/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+Early stopping at step 1 due to reaching max kl.
+Early stopping at step 5 due to reaching max kl.
+Traceback (most recent call last):
+  File "online_finetuning.py", line 207, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 185, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 166, in select_action
+    mean_rollouts_qvalues = {key: np.mean(rollouts_qvalues) for key in range(planning_env.action_space.n)}
+  File "online_finetuning.py", line 166, in <dictcomp>
+    mean_rollouts_qvalues = {key: np.mean(rollouts_qvalues) for key in range(planning_env.action_space.n)}
+  File "<__array_function__ internals>", line 6, in mean
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/numpy/core/fromnumeric.py", line 3335, in mean
+    out=out, **kwargs)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/site-packages/numpy/core/_methods.py", line 163, in _mean
+    ret = ret / rcount
+TypeError: unsupported operand type(s) for /: 'dict' and 'int'

@@ -1,0 +1,31 @@
+[32;1mLogging data to /tmp/experiments/1605160974/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+[32;1mLogging data to /tmp/experiments/1605160978/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+Warning: Log dir /tmp/experiments/1605160978 already exists! Storing info there anyway.
+[32;1mLogging data to /tmp/experiments/1605160978/progress.txt[0m
+[32;1m
+Number of parameters: 	 pi: 1279145, 	 v: 1275041
+[0m
+0
+> /home/arnaud/Desktop/research/code/policy_gradient_search/online_finetuning.py(139)select_action()
+-> action, v, logp = simulation_trainer.ac.step(
+(Pdb) [0, array([3])]
+(Pdb) Traceback (most recent call last):
+  File "online_finetuning.py", line 207, in <module>
+    finetune(params_finetune_trainer, args.min_horizon_online_search, nb_online_sample, env_id, params_env, args.nb_test_episodes, args.test_ep_length, path_ac, path_piot, path_vopt)
+  File "online_finetuning.py", line 185, in finetune
+    action, sampl = select_action(state, obs)
+  File "online_finetuning.py", line 139, in select_action
+    action, v, logp = simulation_trainer.ac.step(
+  File "online_finetuning.py", line 139, in select_action
+    action, v, logp = simulation_trainer.ac.step(
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 51, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/home/arnaud/anaconda3/envs/spinningup/lib/python3.6/bdb.py", line 70, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
